@@ -50,3 +50,52 @@ if is_online:
     print("You are online")
 else:
     print("You are offline")
+
+#str(), int(), float(), bool()
+name = "Big Man Blastoise"
+age = 35
+gpa = 3.69
+is_student = True
+
+print(type(name))
+print(type(gpa))
+print(type(is_student))
+
+gpa = int(gpa)
+print(gpa) #resolves to 3 if 3.69
+
+age = float(age)
+print(age)
+
+age = str(age)
+print(age)
+
+name = bool(name)
+print(name) #resolves to true
+
+#input
+
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+
+age = age + 1
+
+print(f"Hello {name}!")
+print(f"You are {age} years old")
+
+length = float(input("Enter the length: "))
+width = float(input("Enter the width: "))
+
+area = length * width
+
+print(f"The area is: {area}cm²") #numlock on; Alt + 0178
+
+item = input("What item would you like to buy?: ")
+price = float(input("What is the price: "))
+quantity = int(input("How many would you like?: "))
+
+total = price * quantity
+
+print(f"You have bought {quantity}x {item}/s")
+print(f"Your total is: ${total}")
+
